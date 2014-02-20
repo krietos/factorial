@@ -1,13 +1,13 @@
 var factorial = function(input) {
   var result = input;
 
-  for (var i = input; i > 1; i--){
-    result *= (i - 1);
-  } 
-
-  if (result === 0) {
+  if (input === 0) {
     result++;  
+  } else {
+    for (var i = input; i > 1; i--){
+      result *= (i - 1);
+    }
   }
 
-  return result
+  return result;
 };
