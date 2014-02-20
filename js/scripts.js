@@ -1,6 +1,13 @@
 var factorial = function(input) {
-  var result = 0;
-  for (var i = input; i > 0; i--){
-    result += input * (i - 1);
+  var result = input;
+
+  for (var i = input; i > 1; i--){
+    result *= (i - 1);
+  } 
+
+  if (result === 0) {
+    result++;  
   }
+
+  return result
 };
